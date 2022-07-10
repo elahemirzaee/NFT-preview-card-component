@@ -3,7 +3,7 @@
 */
 :root {
     --Soft-blue: hsl(215, 51%, 70%);
-    --Cyan: hsl(178, 100%, 50%);
+    --Cyan: hsla(178, 100%, 50%, 0.7);
     --Very-dark-blue-main-bg: hsl(217, 54%, 11%);
     --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
     --Very-dark-blue-line: hsl(215, 32%, 27%);
@@ -42,4 +42,67 @@ body {
     border-radius: 8px;
     box-shadow: 0 1px 12px rgb(0 0 0 / 12%), 0 1px 12px rgb(0 0 0 / 24%);
     padding: 20px;
+}
+/*
+* OVERLAY WRAPPER STYLES
+*/
+figure.image-overlay {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*
+* INNER IMAGE IN OVERLAY
+*/
+figure.image-overlay .nft-card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+/*
+* VIEW IMAGE IN OVERLAY
+*/
+figure.image-overlay figcaption {
+    position: absolute;
+    top: 50%;
+    left: 22.5%;
+    right: 22.5%;
+    width: 200px;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.8s ease-out;
+    transition-delay: 0.2s;
+}
+/*
+* VIEW IMAGE IN OVERLAY PSUDO CLASS
+*/
+figure.image-overlay:after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 98%;
+    width: 100%;
+    background-color: var(--Cyan);
+    opacity: 0;
+    transition: all 0.8s ease-out;
+    border-radius: 8px;
+}
+/*
+* OVERLAY PSUDO CLASSES
+*/
+figure.image-overlay:hover:after {
+    opacity: 0.9;
+}
+
+/*
+* OVERLAY PSUDO CLASSES VIEW IMAGE TRANSITION
+*/
+figure.image-overlay:hover figcaption {
+    transform: translateY(-50%);
+    opacity: 1;
 }
