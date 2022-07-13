@@ -16,6 +16,7 @@
     --White: hsl(0, 0%, 100%);
     --font-size: 18px;
 }
+
 /*
 * RESET DEFAULT STYLES
 */
@@ -38,6 +39,7 @@ body {
     font-family: 'Outfit', sans-serif;
     margin: 20px 0;
 }
+
 /*
 * CARD WRAPPER STYLES
 */
@@ -49,6 +51,7 @@ body {
     box-shadow: 0 1px 12px rgb(0 0 0 / 12%), 0 1px 12px rgb(0 0 0 / 24%);
     padding: 20px;
 }
+
 /*
 * OVERLAY WRAPPER STYLES
 */
@@ -68,6 +71,7 @@ figure.image-overlay .nft-card-image {
     height: 100%;
     border-radius: 8px;
 }
+
 /*
 * VIEW IMAGE IN OVERLAY
 */
@@ -82,6 +86,7 @@ figure.image-overlay figcaption {
     transition: all 0.8s ease-out;
     transition-delay: 0.2s;
 }
+
 /*
 * VIEW IMAGE IN OVERLAY PSEUDO CLASS
 */
@@ -98,6 +103,7 @@ figure.image-overlay:after {
     transition: all 0.8s ease-out;
     border-radius: 8px;
 }
+
 /*
 * OVERLAY PSEUDO CLASSES
 */
@@ -113,12 +119,34 @@ figure.image-overlay:hover figcaption {
     opacity: 1;
 }
 
+/*
+* CARD HEADER
+*/
 .nft-card h1 {
     color: var(--White);
     margin: 10px 0;
 }
+
+/*
+* CARD DESCRIPTION
+*/
 .nft-card p {
     color: var(--Soft-blue);
     margin: 10px 0;
     font-size: var(--font-size);
+}
+
+/*
+* ATTRIBUTION
+*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+/*
+* ATTRIBUTION LINK
+*/
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
