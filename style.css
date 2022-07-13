@@ -1,4 +1,10 @@
 /*
+* IMPORT FONTS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@200&display=swap');
+
+
+/*
 * CSS VARIABLES
 */
 :root {
@@ -29,7 +35,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--Very-dark-blue-main-bg);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Outfit', sans-serif;
     margin: 20px 0;
 }
 /*
