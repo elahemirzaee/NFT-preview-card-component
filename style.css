@@ -38,7 +38,7 @@ body {
 .nft-card {
     background-color: var(--Very-dark-blue-card-bg);
     width: 400px;
-    height: 500px;
+    /*height: 500px;*/
     border-radius: 8px;
     box-shadow: 0 1px 12px rgb(0 0 0 / 12%), 0 1px 12px rgb(0 0 0 / 24%);
     padding: 20px;
@@ -77,7 +77,7 @@ figure.image-overlay figcaption {
     transition-delay: 0.2s;
 }
 /*
-* VIEW IMAGE IN OVERLAY PSUDO CLASS
+* VIEW IMAGE IN OVERLAY PSEUDO CLASS
 */
 figure.image-overlay:after {
     display: inline-block;
@@ -93,16 +93,26 @@ figure.image-overlay:after {
     border-radius: 8px;
 }
 /*
-* OVERLAY PSUDO CLASSES
+* OVERLAY PSEUDO CLASSES
 */
 figure.image-overlay:hover:after {
     opacity: 0.9;
 }
 
 /*
-* OVERLAY PSUDO CLASSES VIEW IMAGE TRANSITION
+* OVERLAY PSEUDO CLASSES VIEW IMAGE TRANSITION
 */
 figure.image-overlay:hover figcaption {
     transform: translateY(-50%);
     opacity: 1;
+}
+
+.nft-card h1 {
+    color: var(--White);
+    margin: 10px 0;
+}
+.nft-card p {
+    color: var(--Soft-blue);
+    margin: 10px 0;
+    font-size: var(--font-size);
 }
