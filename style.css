@@ -31,10 +31,17 @@
 */
 body {
     background-color: var(--Very-dark-blue-main-bg);
-    width: 100%;
     font-family: 'Outfit', sans-serif;
-    color: hsl(0, 0%, 100%, 60%);
-    padding: 1.25rem;
+    color: hsl(0, 0%, 100%, 60%)
+}
+
+/*
+* CONTAINER STYLES
+*/
+.container {
+    display: grid;
+    height: 100vh;
+    place-items: center;
 }
 
 /*
@@ -61,7 +68,7 @@ p {
 /*
 * CARD WRAPPER STYLES
 */
-.nft-card {
+.container .nft-card {
     background-color: var(--Very-dark-blue-card-bg);
     /*width: 400px;*/
     border-radius: 0.5rem;
@@ -96,7 +103,7 @@ figure.image-overlay figcaption {
     position: absolute;
     top: 50%;
     left: 50%;
-   transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 200px;
     opacity: 0;
     z-index: 1;
@@ -139,7 +146,7 @@ figure.image-overlay:hover figcaption {
 /*
 * CARD HEADER
 */
-.nft-card h2 {
+.container .nft-card h2 {
     color: var(--White);
     margin: 1rem 0.5rem 0.5rem 0;
     transition: color 0.5s ease-in-out;
@@ -149,14 +156,14 @@ figure.image-overlay:hover figcaption {
 /*
 * CARD HEADER HOVER STATE
 */
-.nft-card h2:hover {
+.container .nft-card h2:hover {
     color: var(--Cyan);
 }
 
 /*
 * CARD DESCRIPTION
 */
-.nft-card .nft-card-description {
+.container .nft-card .nft-card-description {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -167,7 +174,7 @@ figure.image-overlay:hover figcaption {
 /*
 * CARD DESCRIPTION LI
 */
-.nft-card .nft-card-description li {
+.container .nft-card .nft-card-description li {
     display: flex;
     align-items: center;
 }
@@ -175,14 +182,14 @@ figure.image-overlay:hover figcaption {
 /*
 * CARD DESCRIPTION LI
 */
-.nft-card .nft-card-description li img {
+.container .nft-card .nft-card-description li img {
     margin-right: 0.5rem;
 }
 
 /*
 * CARD DESCRIPTION LI FIRST CHILD
 */
-.nft-card .nft-card-description li:first-child {
+.container .nft-card .nft-card-description li:first-child {
     color: var(--Cyan);
     font-weight: 600;
 }
@@ -190,7 +197,7 @@ figure.image-overlay:hover figcaption {
 /*
 * CARD AVATAR
 */
-.nft-card .nft-card-avatar {
+.container .nft-card .nft-card-avatar {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -200,7 +207,7 @@ figure.image-overlay:hover figcaption {
 /*
 * CARD AVATAR IMG
 */
-.nft-card .nft-card-avatar img {
+.container .nft-card .nft-card-avatar img {
     width: 2.5rem;
     border: 2px solid var(--White);
     border-radius: 50%;
@@ -210,7 +217,7 @@ figure.image-overlay:hover figcaption {
 /*
 * CARD AVATAR PARAGRAPH SPAN
 */
-.nft-card .nft-card-avatar p span {
+.container .nft-card .nft-card-avatar p span {
     color: var(--White);
     font-weight: 400;
     cursor: pointer;
@@ -220,24 +227,24 @@ figure.image-overlay:hover figcaption {
 /*
 * CARD AVATAR PARAGRAPH SPAN HOVER STATE
 */
-.nft-card .nft-card-avatar p span:hover {
+.container .nft-card .nft-card-avatar p span:hover {
     color: var(--Cyan);
 }
 
 /*
 * ATTRIBUTION
 */
-.attribution {
+.container .attribution {
     font-size: 12px;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     color: var(--White);
 }
 
 /*
 * ATTRIBUTION LINK
 */
-.attribution a {
+.container .attribution a {
     color: hsl(228, 45%, 44%);
 }
 
@@ -245,8 +252,8 @@ figure.image-overlay:hover figcaption {
 * MEDIA QUERY
 */
 @media (min-width: 500px) {
-    .nft-card {
+    .container .nft-card {
         width: 350px;
-        margin: 55px auto;
+        /*margin: 55px auto;*/
     }
 }
