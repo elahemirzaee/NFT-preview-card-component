@@ -138,7 +138,6 @@ figure.image-overlay:hover:after {
 * OVERLAY PSEUDO CLASSES VIEW IMAGE TRANSITION
 */
 figure.image-overlay:hover figcaption {
-    transform: translateX(-50%);
     opacity: 1;
 }
 
