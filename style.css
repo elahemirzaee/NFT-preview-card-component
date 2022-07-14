@@ -247,6 +247,6 @@ figure.image-overlay:hover figcaption {
 @media (min-width: 500px) {
     .nft-card {
         width: 350px;
-        margin: 80px auto;
+        margin: 55px auto;
     }
 }
