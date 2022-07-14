@@ -102,7 +102,7 @@ figure.image-overlay figcaption {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -115%);
     width: 200px;
     opacity: 0;
     z-index: 1;
@@ -138,6 +138,7 @@ figure.image-overlay:hover:after {
 * OVERLAY PSEUDO CLASSES VIEW IMAGE TRANSITION
 */
 figure.image-overlay:hover figcaption {
+    transform: translate(-50%,-40%);
     opacity: 1;
 }
 
