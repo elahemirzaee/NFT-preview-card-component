@@ -232,23 +232,6 @@ figure.image-overlay:hover figcaption {
 }
 
 /*
-* ATTRIBUTION
-*/
-.container .attribution {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 0.5rem;
-    color: var(--White);
-}
-
-/*
-* ATTRIBUTION LINK
-*/
-.container .attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
-/*
 * MEDIA QUERY
 */
 @media (min-width: 500px) {
