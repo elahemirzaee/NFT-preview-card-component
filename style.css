@@ -9,7 +9,7 @@
 */
 :root {
     --Soft-blue: hsl(215, 51%, 70%);
-    --Cyan: hsla(178, 100%, 50%, 0.7);
+    --Cyan: hsl(178, 100%, 50%);
     --Very-dark-blue-main-bg: hsl(217, 54%, 11%);
     --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
     --Very-dark-blue-line: hsl(215, 32%, 27%);
@@ -70,7 +70,6 @@ p {
 */
 .container .nft-card {
     background-color: var(--Very-dark-blue-card-bg);
-    /*width: 400px;*/
     border-radius: 0.5rem;
     box-shadow: 0 1px 12px rgb(0 0 0 / 12%), 0 1px 12px rgb(0 0 0 / 24%);
     padding: 1.25rem;
@@ -122,7 +121,7 @@ figure.image-overlay:after {
     right: 0;
     height: calc(100% - 4px);
     width: 100%;
-    background-color: var(--Cyan);
+    background-color: hsla(178, 100%, 50%, 0.7);;
     opacity: 0;
     transition: all 0.8s ease-out;
     border-radius: 8px;
@@ -148,7 +147,7 @@ figure.image-overlay:hover figcaption {
 */
 .container .nft-card h2 {
     color: var(--White);
-    margin: 1rem 0.5rem 0.5rem 0;
+    margin: 1rem 0.5rem 1rem 0;
     transition: color 0.5s ease-in-out;
     cursor: pointer;
 }
@@ -160,6 +159,15 @@ figure.image-overlay:hover figcaption {
     color: var(--Cyan);
 }
 
+
+/*
+* CARD WRAPPER STYLES
+*/
+.container .nft-card .paragraph {
+    color: var(--Soft-blue);
+    font-size: var(--font-size);
+}
+
 /*
 * CARD DESCRIPTION
 */
@@ -168,7 +176,7 @@ figure.image-overlay:hover figcaption {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0;
-    border-bottom: 1px solid var(--Very-dark-blue-line);
+    border-bottom: 2px solid var(--Very-dark-blue-line);
 }
 
 /*
@@ -195,6 +203,13 @@ figure.image-overlay:hover figcaption {
 }
 
 /*
+* CARD DESCRIPTION LI SECOND CHILD
+*/
+.container .nft-card .nft-card-description li:nth-child(2) {
+    color: var(--Soft-blue);
+}
+
+/*
 * CARD AVATAR
 */
 .container .nft-card .nft-card-avatar {
@@ -208,10 +223,18 @@ figure.image-overlay:hover figcaption {
 * CARD AVATAR IMG
 */
 .container .nft-card .nft-card-avatar img {
-    width: 2.5rem;
+    width: 2rem;
     border: 2px solid var(--White);
     border-radius: 50%;
     margin-right: 1rem;
+}
+
+/*
+* CARD AVATAR PARAGRAPH
+*/
+.container .nft-card .nft-card-avatar p {
+    font-size: 16px;
+    color: var(--Soft-blue);
 }
 
 /*
