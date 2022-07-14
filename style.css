@@ -30,11 +30,6 @@
 * STYLES OF ELEMENT BODY
 */
 body {
-    /*height: 99vh;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*flex-direction: column;*/
     background-color: var(--Very-dark-blue-main-bg);
     width: 100%;
     font-family: 'Outfit', sans-serif;
