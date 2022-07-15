@@ -105,7 +105,7 @@ figure.image-overlay figcaption {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -115%);
-    width: 200px;
+    width: 12.5rem;
     opacity: 0;
     z-index: 1;
     transition: all 0.8s ease-out;
@@ -235,7 +235,7 @@ figure.image-overlay:hover figcaption {
 * CARD AVATAR PARAGRAPH
 */
 .nft-card .nft-card-avatar p {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--Soft-blue);
 }
 
@@ -262,6 +262,6 @@ figure.image-overlay:hover figcaption {
 
 @media screen and (min-width: 520px) {
     .nft-card {
-        width: 350px;
+        width: 21.875rem;
     }
 }
