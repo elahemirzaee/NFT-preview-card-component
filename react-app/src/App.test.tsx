@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(/Our Equilibrium collection promotes balance and calm./i);
   expect(linkElement).toBeInTheDocument();
 });
