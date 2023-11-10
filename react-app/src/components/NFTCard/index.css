@@ -1,0 +1,13 @@
+.nft-card {
+  background-color: var(--Very-dark-blue-card-bg);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 12px rgb(0 0 0 / 12%), 0 1px 12px rgb(0 0 0 / 24%);
+  padding: 1.25rem;
+  width: 90%;
+}
+
+@media screen and (min-width: 520px) {
+  .nft-card {
+    width: 21.875rem;
+  }
+}

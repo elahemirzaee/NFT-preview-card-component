@@ -1,0 +1,26 @@
+.nft-card .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 2px solid var(--Very-dark-blue-line);
+}
+
+.nft-card .info li {
+  display: flex;
+  align-items: center;
+}
+
+.nft-card .info li img {
+  margin-right: 0.5rem;
+}
+
+
+.nft-card .info li:first-child {
+  color: var(--Cyan);
+  font-weight: 600;
+}
+
+.nft-card .info li:nth-child(2) {
+  color: var(--Soft-blue);
+}

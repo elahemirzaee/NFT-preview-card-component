@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
